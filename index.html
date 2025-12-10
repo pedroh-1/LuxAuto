@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxAuto | Performance e Design</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-4" href="#">LUX<span class="text-danger">AUTO</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item"><a class="nav-link" href="#modelos">Modelos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#configurador">Configurador</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#financiamento">Financiamento</a></li>
+                        <li class="nav-item"><a class="btn btn-dark btn-sm rounded-0 px-3" href="#">Fale Conosco</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+    
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+        
+        <div class="carousel-item active carousel-hero-item">
+            <img src="https://imgs.search.brave.com/PTXXBNmCqIGeyoef9NavVQHkA1DezVn45nYqZw3aCWQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8y/LzI4LzIwMjVfUG9y/c2NoZV85OTJfVHVy/Ym9fU19jb3VwZXNf/SUFBXzIwMjVfRFND/XzE4MzYuanBn" alt="Porsche Estrada">
+            
+            <div class="carousel-caption-center text-white">
+                <h1 class="display-3 fw-bold">Novo Modelo GT</h1>
+                <p class="lead fs-4">A forma segue a função.</p>
+                <button class="btn btn-light btn-lux mt-3">Descubra o Modelo</button>
+            </div>
+        </div>
+
+        <div class="carousel-item carousel-hero-item">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1920&auto=format&fit=crop" alt="Porsche Interior">
+            
+            <div class="carousel-caption-center text-white">
+                <h1 class="display-3 fw-bold">Luxo Interior</h1>
+                <p class="lead fs-4">Conforto desenhado para pilotos.</p>
+                <button class="btn btn-outline-light btn-lux mt-3">Ver Interior</button>
+            </div>
+        </div>
+
+        <div class="carousel-item carousel-hero-item">
+            <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1920&auto=format&fit=crop" alt="Porsche Corrida">
+            
+            <div class="carousel-caption-center text-white">
+                <h1 class="display-3 fw-bold">Performance Pura</h1>
+                <p class="lead fs-4">De 0 a 100km/h em 2.8 segundos.</p>
+                <button class="btn btn-light btn-lux mt-3">Agendar Test Drive</button>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+    </button>
+</section>
+
+        <section id="modelos" class="py-5 bg-white">
+            <div class="container my-5">
+                <h2 class="display-6 fw-bold mb-5">Modelos Disponíveis</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card border-0">
+                            <img src="https://imgs.search.brave.com/PTXXBNmCqIGeyoef9NavVQHkA1DezVn45nYqZw3aCWQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8y/LzI4LzIwMjVfUG9y/c2NoZV85OTJfVHVy/Ym9fU19jb3VwZXNf/SUFBXzIwMjVfRFND/XzE4MzYuanBn" class="card-img-top" alt="Carro Esportivo">
+                            <div class="card-body px-0">
+                                <h4 class="card-title fw-bold">911 Carrera</h4>
+                                <p class="text-muted">Motor Central | 711 cv</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="fw-bold">R$ 535.000</span>
+                                    <button class="btn btn-dark btn-sm rounded-0" data-bs-toggle="modal" data-bs-target="#modalCayman">Configurar & Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card border-0">
+                            <img src="https://imgs.search.brave.com/1W657DM8JFD75uB2Yg7sIQaowG5ll6wwLOJkZsgqlMo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy8yMDI1/LWJtdy1tOC1jb21w/ZXRpdGlvbi1jb3Vw/ZS0xMDEtNjYzYTNi/ZjU3YTU5Yy5qcGc_/Y3JvcD0wLjc3MXh3/OjAuMjkxeGg7MC4x/ODl4dywwLjU0Mnho/JnJlc2l6ZT0xMjAw/Oio" class="card-img-top" alt="Carro SUV">
+                            <div class="card-body px-0">
+                                <h4 class="card-title fw-bold">BMW M8 Competition</h4>
+                                <p class="text-muted">Ícone Atemporal | 625 cv</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="fw-bold">R$ 835.000</span>
+                                    <button class="btn btn-dark btn-sm rounded-0" data-bs-toggle="modal" data-bs-target="#modalTaycan">Configurar & Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card border-0">
+                            <img src="https://imgs.search.brave.com/teaWF0h8ZIr1wdoqXxH9onAlocbW8eYu9ilwPuP_vAM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9l/L2U5L0F1ZGlfUlM2/X0F2YW50X0M4X0lN/R181NjgyLmpwZw" class="card-img-top" alt="Carro Elétrico">
+                            <div class="card-body px-0">
+                                <h4 class="card-title fw-bold">Audi RS6</h4>
+                                <p class="text-muted">V8 biturbo | 730 cv</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="fw-bold">R$ 1.100.000</span>
+                                   <button class="btn btn-dark btn-sm rounded-0" data-bs-toggle="modal" data-bs-target="#modal911">Configurar & Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="configurador" class="lifestyle-section text-center">
+    <div class="container">
+        
+        <h2 class="lifestyle-title display-5">Escolha um LuxAuto para o seu estilo de vida</h2>
+        <p class="text-muted fs-5 mb-4">Potência, liberdade e design. Qual combina com você?</p>
+        
+        <button class="btn btn-dark btn-pill" onclick="document.getElementById('modelos').scrollIntoView({behavior: 'smooth'})">
+            Ver todos os veículos &nbsp; >
+        </button>
+
+        <div class="car-lineup">
+            
+            <img src="https://imgs.search.brave.com/0rk8rp6KeHhINh2wH8Oya_o89R-LHUsp2cynSEwVe0o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kaS11/cGxvYWRzLXBvZDMw/LmRlYWxlcmluc3Bp/cmUuY29tL2Jtd29m/c2NoZXJlcnZpbGxl/L3VwbG9hZHMvMjAy/NS8wNC9CTVdTY2hf/U1VWX1gzX0ltYWdl/XzVfNjAweDQwMF9B/cHIyNV92MS5qcGc" 
+                 alt="SUV" 
+                 title="Espaço e Conforto"
+                 onclick="comprar('Macan SUV')">
+            
+            <img src="https://imgs.search.brave.com/gVxGDnkCb2tu_IBuFzMuOLbMW5ONrckR6rk5odBU2iw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2M2LzIwMTNfUG9y/c2NoZV85MTFfQ2Fy/cmVyYV80U18oOTkx/KV8oOTYyNjU0Njk4/NykuanBn" 
+                 style="max-width: 500px; width: 35%; z-index: 2;" 
+                 alt="Esportivo" 
+                 title="Performance Pura"
+                 onclick="comprar('911 GT3')">
+
+            <img src="https://imgs.search.brave.com/rrOB77etlDfEFMu_O4Tu_qUJnfE2_gadlm5em2VS6bQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mb3Ji/ZXMuY29tLmJyL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE2LzA3/L01BU0VSQVRJLUdS/QU5UVVJJU01PLUVE/SVQtODAweDUzMy5q/cGc" 
+                 alt="Conversível" 
+                 title="Liberdade"
+                 onclick="comprar('718 Cayman')">
+        </div>
+        
+    </div>
+</section>
+
+        <section id="financiamento" class="py-5 bg-body-tertiary">
+    <div class="container" style="max-width: 600px;">
+        <h3 class="fw-bold text-center mb-4">Simulação de Financiamento</h3>
+        
+        <div class="card p-4 border-0 shadow-sm">
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold">Escolha o Modelo</label>
+                <select id="selectVeiculo" class="form-select mb-2" onchange="atualizarPrecoDisplay()">
+                    <option value="0" selected disabled>Selecione um modelo...</option>
+                    <option value="535000">718 Cayman (R$ 535k)</option>
+                    <option value="660000">Taycan Elétrico (R$ 660k)</option>
+                    <option value="835000">911 Carrera (R$ 835k)</option>
+                    <option value="450000">Macan SUV (R$ 450k)</option>
+                </select>
+                <small id="displayValorCarro" class="text-muted">Valor: R$ 0,00</small>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Valor de Entrada (R$)</label>
+                <input type="number" id="inputEntrada" class="form-control" placeholder="Ex: 100000">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Condição de Pagamento</label>
+                <select id="inputParcelas" class="form-select">
+                    <option value="1">À vista (5% de Desconto)</option>
+                    <option value="12">12x (Taxa Zero)</option>
+                    <option value="24">24x (0.99% a.m)</option>
+                    <option value="36">36x (1.19% a.m)</option>
+                    <option value="48">48x (1.29% a.m)</option>
+                </select>
+            </div>
+
+            <button onclick="calcularFinanciamento()" class="btn btn-dark w-100 rounded-0 py-2 fw-bold">CALCULAR SIMULAÇÃO</button>
+            
+            <div id="resultado-financiamento" class="alert alert-light border mt-3 text-center d-none">
+                </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="fw-bold">LUXAUTO</h5>
+                    <p class="small text-secondary">Excelência em cada detalhe.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-uppercase mb-3">Links Úteis</h6>
+                    <ul class="list-unstyled small text-secondary">
+                        <li><a href="#" class="text-decoration-none text-secondary">Sobre Nós</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Carreiras</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Imprensa</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-uppercase mb-3">Contato</h6>
+                    <p class="small text-secondary">Av. das Nações, 1000<br>São Paulo - SP</p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <p class="text-center small text-secondary mb-0">&copy; 2024 LuxAuto. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+<div class="modal fade" id="modalCayman" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title fw-bold display-6 fs-4">718 Cayman</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                
+                <ul class="nav nav-tabs mb-4" id="caymanTab" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="config-tab" data-bs-toggle="tab" data-bs-target="#cayman-config" type="button">Configuração</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="tech-tab" data-bs-toggle="tab" data-bs-target="#cayman-tech" type="button">Dados Técnicos</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="caymanTabContent">
+                    
+                    <div class="tab-pane fade show active text-center" id="cayman-config">
+                        <img id="img-cayman" src="https://placehold.co/800x400/silver/white?text=Cayman+Prata" class="img-fluid rounded mb-3">
+                        <h4 id="txt-cayman" class="text-muted mb-3">Prata Metálico</h4>
+                        
+                        <p class="mb-2 text-uppercase small fw-bold">Cor Exterior</p>
+                        <div class="d-flex justify-content-center gap-3 mb-4">
+                            <button class="btn rounded-circle border border-2 shadow-sm" style="width: 45px; height: 45px; background-color: silver;" onclick="mudarCorModal('prata', 'img-cayman', 'txt-cayman', 'Cayman')"></button>
+                            <button class="btn rounded-circle border border-2 shadow-sm" style="width: 45px; height: 45px; background-color: #ce0000;" onclick="mudarCorModal('vermelho', 'img-cayman', 'txt-cayman', 'Cayman')"></button>
+                            <button class="btn rounded-circle border border-2 shadow-sm" style="width: 45px; height: 45px; background-color: #111;" onclick="mudarCorModal('preto', 'img-cayman', 'txt-cayman', 'Cayman')"></button>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="cayman-tech">
+                        
+                        <div class="tech-box d-flex align-items-center justify-content-between mb-4">
+                            <div class="text-center w-50">
+                                <img src="https://cdn-icons-png.flaticon.com/512/55/55206.png" style="opacity: 0.5; height: 100px;" alt="Vista Superior">
+                            </div>
+                            
+                            <div class="w-50 ps-4 border-start">
+                                <div class="mb-3">
+                                    <small class="text-muted d-block">Comprimento</small>
+                                    <span class="fw-bold fs-5">4.379 mm</span>
+                                </div>
+                                <div class="mb-3">
+                                    <small class="text-muted d-block">Entre-eixos</small>
+                                    <span class="fw-bold fs-5">2.475 mm</span>
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block">Largura</small>
+                                    <span class="fw-bold fs-5">1.801 mm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h6 class="fw-bold mb-3">Unidade de Potência</h6>
+                        
+                        <div class="tech-spec-row">
+                            <span class="tech-label">Potência até (kW)</span>
+                            <span class="tech-value">220 kW</span>
+                        </div>
+                        <div class="tech-spec-row">
+                            <span class="tech-label">Potência até (cv)</span>
+                            <span class="tech-value">300 cv</span>
+                        </div>
+                        <div class="tech-spec-row">
+                            <span class="tech-label">Torque máximo</span>
+                            <span class="tech-value">380 Nm</span>
+                        </div>
+                        <div class="tech-spec-row border-0">
+                            <span class="tech-label">0 - 100 km/h</span>
+                            <span class="tech-value">4,9 s</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="mt-4">
+                
+                <div class="d-flex justify-content-between align-items-center px-2">
+                    <div>
+                        <small class="text-muted">Preço Total Estimado</small>
+                        <h3 class="fw-bold m-0">R$ 535.000</h3>
+                    </div>
+                    <button class="btn btn-success rounded-0 px-5 py-3 fw-bold" onclick="comprar('718 Cayman')">
+                        ENCOMENDAR
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modalTaycan" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title fw-bold display-6 fs-4">Taycan Elétrico</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <ul class="nav nav-tabs mb-4" id="taycanTab" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="taycan-config-tab" data-bs-toggle="tab" data-bs-target="#taycan-config" type="button">Configuração</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="taycan-tech-tab" data-bs-toggle="tab" data-bs-target="#taycan-tech" type="button">Dados Técnicos</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade show active text-center" id="taycan-config">
+                        <img id="img-taycan" src="https://placehold.co/800x400/silver/white?text=Taycan+Prata" class="img-fluid rounded mb-3">
+                        <h4 id="txt-taycan" class="text-muted mb-3">Prata Metálico</h4>
+                        
+                        <p class="mb-2 text-uppercase small fw-bold">Cor Exterior</p>
+                        <div class="d-flex justify-content-center gap-3 mb-4">
+                            <button class="btn rounded-circle border border-2 shadow-sm" style="width: 45px; height: 45px; background-color: silver;" onclick="mudarCorModal('prata', 'img-taycan', 'txt-taycan', 'Taycan')"></button>
+                            <button class="btn rounded-circle border border-2 shadow-sm" style="width: 45px; height: 45px; background-color: #ce0000;" onclick="mudarCorModal('vermelho', 'img-taycan', 'txt-taycan', 'Taycan')"></button>
+                            <button class="btn rounded-circle border border-2 shadow-sm" style="width: 45px; height: 45px; background-color: #111;" onclick="mudarCorModal('preto', 'img-taycan', 'txt-taycan', 'Taycan')"></button>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="taycan-tech">
+                        <div class="tech-box d-flex align-items-center justify-content-between mb-4">
+                            <div class="text-center w-50">
+                                <img src="https://cdn-icons-png.flaticon.com/512/55/55206.png" style="opacity: 0.5; height: 100px;" alt="Vista Superior">
+                            </div>
+                            <div class="w-50 ps-4 border-start">
+                                <div class="mb-3"><small class="text-muted d-block">Comprimento</small><span class="fw-bold fs-5">4.963 mm</span></div>
+                                <div class="mb-3"><small class="text-muted d-block">Entre-eixos</small><span class="fw-bold fs-5">2.900 mm</span></div>
+                                <div><small class="text-muted d-block">Largura</small><span class="fw-bold fs-5">1.966 mm</span></div>
+                            </div>
+                        </div>
+
+                        <h6 class="fw-bold mb-3">Performance Elétrica</h6>
+                        <div class="tech-spec-row"><span class="tech-label">Potência (Overboost)</span><span class="tech-value">300 kW (408 cv)</span></div>
+                        <div class="tech-spec-row"><span class="tech-label">Bateria</span><span class="tech-value">79,2 kWh</span></div>
+                        <div class="tech-spec-row"><span class="tech-label">Autonomia (WLTP)</span><span class="tech-value">431 km</span></div>
+                        <div class="tech-spec-row border-0"><span class="tech-label">0 - 100 km/h</span><span class="tech-value">5,4 s</span></div>
+                    </div>
+                </div>
+
+                <hr class="mt-4">
+                <div class="d-flex justify-content-between align-items-center px-2">
+                    <div><small class="text-muted">Preço Total Estimado</small><h3 class="fw-bold m-0">R$ 660.000</h3></div>
+                    <button class="btn btn-success rounded-0 px-5 py-3 fw-bold" onclick="comprar('Taycan Elétrico')">ENCOMENDAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal911" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title fw-bold display-6 fs-4">911 Carrera</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <ul class="nav nav-tabs mb-4" id="911Tab" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="911-config-tab" data-bs-toggle="tab" data-bs-target="#config-911" type="button">Configuração</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="911-tech-tab" data-bs-toggle="tab" data-bs-target="#tech-911" type="button">Dados Técnicos</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade show active text-center" id="config-911">
+                        <img id="img-911" src="https://placehold.co/800x400/silver/white?text=911+Prata" class="img-fluid rounded mb-3">
+                        <h4 id="txt-911" class="text-muted mb-3">Prata Metálico</h4>
+                        
+                        <p class="mb-2 text-uppercase small fw-bold">Cor Exterior</p>
+                        <div class="d-flex justify-content-center gap-3 mb-4">
+                            <button class="btn rounded-circle border border-2 shadow-sm" style="width: 45px; height: 45px; background-color: silver;" onclick="mudarCorModal('prata', 'img-911', 'txt-911', '911')"></button>
+                            <button class="btn rounded-circle border border-2 shadow-sm" style="width: 45px; height: 45px; background-color: #ce0000;" onclick="mudarCorModal('vermelho', 'img-911', 'txt-911', '911')"></button>
+                            <button class="btn rounded-circle border border-2 shadow-sm" style="width: 45px; height: 45px; background-color: #111;" onclick="mudarCorModal('preto', 'img-911', 'txt-911', '911')"></button>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="tech-911">
+                        <div class="tech-box d-flex align-items-center justify-content-between mb-4">
+                            <div class="text-center w-50">
+                                <img src="https://cdn-icons-png.flaticon.com/512/55/55206.png" style="opacity: 0.5; height: 100px;" alt="Vista Superior">
+                            </div>
+                            <div class="w-50 ps-4 border-start">
+                                <div class="mb-3"><small class="text-muted d-block">Comprimento</small><span class="fw-bold fs-5">4.519 mm</span></div>
+                                <div class="mb-3"><small class="text-muted d-block">Entre-eixos</small><span class="fw-bold fs-5">2.450 mm</span></div>
+                                <div><small class="text-muted d-block">Largura</small><span class="fw-bold fs-5">1.852 mm</span></div>
+                            </div>
+                        </div>
+
+                        <h6 class="fw-bold mb-3">Unidade de Potência</h6>
+                        <div class="tech-spec-row"><span class="tech-label">Potência até (kW)</span><span class="tech-value">283 kW</span></div>
+                        <div class="tech-spec-row"><span class="tech-label">Potência até (cv)</span><span class="tech-value">385 cv</span></div>
+                        <div class="tech-spec-row"><span class="tech-label">Torque máximo</span><span class="tech-value">450 Nm</span></div>
+                        <div class="tech-spec-row border-0"><span class="tech-label">0 - 100 km/h</span><span class="tech-value">4,2 s</span></div>
+                    </div>
+                </div>
+
+                <hr class="mt-4">
+                <div class="d-flex justify-content-between align-items-center px-2">
+                    <div><small class="text-muted">Preço Total Estimado</small><h3 class="fw-bold m-0">R$ 835.000</h3></div>
+                    <button class="btn btn-success rounded-0 px-5 py-3 fw-bold" onclick="comprar('911 Carrera')">ENCOMENDAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    // 1. TEMA DARK/LIGHT (Mantivemos a função anterior)
+    function alternarTema() {
+        const html = document.documentElement;
+        const nav = document.getElementById('mainNav');
+        if (html.getAttribute('data-bs-theme') === 'dark') {
+            html.setAttribute('data-bs-theme', 'light');
+            nav.classList.replace('bg-dark', 'bg-white');
+            nav.classList.replace('navbar-dark', 'navbar-light');
+        } else {
+            html.setAttribute('data-bs-theme', 'dark');
+            nav.classList.replace('bg-white', 'bg-dark');
+            nav.classList.replace('navbar-light', 'navbar-dark');
+        }
+    }
+
+    // 2. FUNÇÕES DO MODAL (Compra e Cor)
+    function mudarCorModal(cor, idImagem, idTexto, nomeCarro) {
+        const img = document.getElementById(idImagem);
+        const texto = document.getElementById(idTexto);
+        if (cor === 'vermelho') {
+            img.src = `https://placehold.co/800x400/ce0000/white?text=${nomeCarro}+Vermelho`;
+            texto.innerText = 'Vermelho Guarda';
+        } else if (cor === 'preto') {
+            img.src = `https://placehold.co/800x400/111/white?text=${nomeCarro}+Preto`;
+            texto.innerText = 'Preto Jet Metálico';
+        } else {
+            img.src = `https://placehold.co/800x400/silver/white?text=${nomeCarro}+Prata`;
+            texto.innerText = 'Prata Metálico';
+        }
+    }
+
+    function comprar(modelo) {
+        alert(`Processo de compra iniciado para: ${modelo}`);
+    }
+
+    // 3. FUNÇÃO VISUAL (Atualiza preço ao selecionar no menu)
+    function atualizarPrecoDisplay() {
+        const select = document.getElementById('selectVeiculo');
+        const display = document.getElementById('displayValorCarro');
+        const valor = Number(select.value);
+
+        if (valor > 0) {
+            display.innerText = `Valor base: ${valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`;
+            display.classList.add('text-primary');
+        } else {
+            display.innerText = "Valor: R$ 0,00";
+            display.classList.remove('text-primary');
+        }
+    }
+
+    // 4. CÁLCULO FINANCEIRO (A função que estava falhando)
+    function calcularFinanciamento() {
+        try {
+            // Pegando os elementos pelo ID
+            const selectVeiculo = document.getElementById('selectVeiculo');
+            const inputEntrada = document.getElementById('inputEntrada');
+            const selectParcelas = document.getElementById('inputParcelas');
+            const divResultado = document.getElementById('resultado-financiamento');
+
+            // Convertendo para números
+            const valorVeiculo = Number(selectVeiculo.value);
+            const entrada = Number(inputEntrada.value);
+            const parcelas = Number(selectParcelas.value);
+
+            // Validação: Se não escolheu carro, para tudo e avisa
+            if (valorVeiculo === 0) {
+                alert("Por favor, selecione um veículo na lista antes de calcular.");
+                return;
+            }
+
+            // Formatador de dinheiro (R$)
+            const formatoMoeda = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
+
+            // --- CENÁRIO: À VISTA (1x) ---
+            if (parcelas === 1) {
+                const desconto = 0.05; // 5%
+                const valorComDesconto = valorVeiculo * (1 - desconto);
+                const economia = valorVeiculo - valorComDesconto;
+
+                // Escreve o HTML do resultado
+                divResultado.innerHTML = `
+                    <div class="text-success bg-opacity-10 bg-success p-2 rounded">
+                        <h5 class="fw-bold mb-1">Preço Final: ${formatoMoeda.format(valorComDesconto)}</h5>
+                        <small>Pagamento à vista (5% OFF applied)</small>
+                    </div>
+                    <hr>
+                    <small class="text-muted">Você economizou: <strong>${formatoMoeda.format(economia)}</strong></small>
+                `;
+            } 
+            // --- CENÁRIO: FINANCIADO ---
+            else {
+                if (entrada >= valorVeiculo) {
+                    alert("A entrada não pode ser maior que o valor do veículo.");
+                    return;
+                }
+
+                // Definindo juros
+                let taxaJuros = 0;
+                if (parcelas === 24) taxaJuros = 0.0099;
+                else if (parcelas === 36) taxaJuros = 0.0119;
+                else if (parcelas > 36) taxaJuros = 0.0149;
+
+                const valorFinanciado = valorVeiculo - entrada;
+                let valorParcela = 0;
+
+                if (taxaJuros === 0) {
+                    valorParcela = valorFinanciado / parcelas;
+                } else {
+                    // Fórmula Price
+                    valorParcela = (valorFinanciado * taxaJuros) / (1 - Math.pow(1 + taxaJuros, -parcelas));
+                }
+
+                const totalPagar = (valorParcela * parcelas) + entrada;
+
+                // Escreve o HTML do resultado
+                divResultado.innerHTML = `
+                    <h5 class="fw-bold mb-1">Parcela: ${formatoMoeda.format(valorParcela)}</h5>
+                    <small class="text-muted">Plano: ${parcelas}x com entrada de ${formatoMoeda.format(entrada)}</small>
+                    <div class="mt-2 text-muted" style="font-size: 0.85rem">
+                        Total final a prazo: ${formatoMoeda.format(totalPagar)}
+                    </div>
+                `;
+            }
+
+            // IMPORTANTE: Faz o resultado aparecer removendo a classe 'd-none'
+            divResultado.classList.remove('d-none');
+
+        } catch (erro) {
+            console.error(erro);
+            alert("Ocorreu um erro no cálculo. Verifique o Console (F12) para detalhes.");
+        }
+    }
+</script>
+</body>
+</html>

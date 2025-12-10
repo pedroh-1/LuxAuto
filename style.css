@@ -1,0 +1,141 @@
+/* Fonte limpa estilo corporativo */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #191919;
+        }
+
+        /* Hero Section com imagem de fundo */
+        .hero-section {
+            height: 90vh; /* Ocupa 90% da altura da tela */
+            background: url('https://images.unsplash.com/photo-1503376763036-066120622c74?q=80&w=1920&auto=format&fit=crop') no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+        
+        /* Overlay escuro para o texto ficar legível no Hero */
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.4);
+            height: 100%;
+            display: flex;
+            align-items: flex-end; /* Texto embaixo igual Porsche */
+            padding-bottom: 80px;
+        }
+
+        /* Botões quadrados estilo Porsche */
+        .btn-lux {
+            border-radius: 0px; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 10px 30px;
+            font-weight: 600;
+        }
+
+        /* Ajuste fino nos Cards */
+        .card-img-top {
+    height: 180px;       /* Define a altura padrão para TODAS as imagens */
+    object-fit: cover;   /* O segredo: corta a imagem para preencher o espaço sem distorcer */
+    width: 100%;         /* Garante que ocupe toda a largura do card */
+    
+    /* Mantém o efeito de zoom que já tínhamos */
+    transition: transform 0.3s ease;
+}
+        .card:hover .card-img-top {
+            transform: scale(1.05); /* Zoom suave ao passar o mouse */
+        }
+
+
+        /* Configuração do Carrossel para ocupar a tela */
+.carousel-hero-item {
+    height: 90vh; /* Altura do Hero */
+    position: relative;
+}
+
+/* A imagem deve cobrir tudo sem distorcer */
+.carousel-hero-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Faz a imagem cobrir a área sem esticar */
+    filter: brightness(0.6); /* Escurece a imagem em 40% para o texto branco ler melhor */
+}
+
+/* Centralizar o texto sobre o slide */
+.carousel-caption-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    z-index: 10; /* Garante que o texto fique em cima da imagem */
+}
+
+/* Estilo para a aba de Dados Técnicos */
+.tech-box {
+    background-color: #f4f5f6; /* O cinza exato da Porsche */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tech-spec-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+.tech-label { color: #666; }
+.tech-value { font-weight: 700; color: #000; }
+
+/* Remove a borda das abas para ficar limpo */
+.nav-tabs .nav-link { color: #666; font-weight: 600; }
+.nav-tabs .nav-link.active { color: #000; border-color: #dee2e6 #dee2e6 #fff; }
+
+/* Estilo da Seção Lifestyle (Inspirado na Ford) */
+.lifestyle-section {
+    background-color: #fff;
+    padding-top: 80px;
+    padding-bottom: 0; /* Os carros vão encostar no chão da seção */
+    overflow: hidden; /* Esconde se a roda passar um pouco */
+}
+
+.lifestyle-title {
+    color: #00095b; /* Azul escuro estilo Ford/Volkswagen */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.btn-pill {
+    border-radius: 50px; /* Botão bem redondo */
+    padding: 10px 40px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* O "Pulo do Gato": Alinhamento dos Carros */
+.car-lineup {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Alinha todos pela roda */
+    margin-top: 40px;
+}
+
+.car-lineup img {
+    max-width: 450px; /* Tamanho dos carros */
+    width: 30%;       /* Responsivo */
+    transition: transform 0.4s ease;
+    cursor: pointer;
+    /* Efeito de sobreposição estilo Ford */
+    margin-left: -40px; 
+    margin-right: -40px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Quando passar o mouse, o carro vem para frente e aumenta */
+.car-lineup img:hover {
+    transform: scale(1.15) translateY(-10px);
+    z-index: 10; /* Fica na frente dos outros */
+}
+
