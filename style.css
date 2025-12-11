@@ -131,11 +131,13 @@
     margin-right: -40px;
     position: relative;
     z-index: 1;
+    border-radius: 20px;
 }
 
 /* Quando passar o mouse, o carro vem para frente e aumenta */
 .car-lineup img:hover {
     transform: scale(1.15) translateY(-10px);
     z-index: 10; /* Fica na frente dos outros */
+    border-radius: 20px;
 }
 
